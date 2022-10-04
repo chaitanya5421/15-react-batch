@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react'
+import "./App.css"
+import ClassComponent from './ClassComponent';
+import FuncComponent from './FuncComponent';
+import StylingsCss from './StylingsCss';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from './Components/Header/Header';
+import UserData from './Components/UserData';
+import ConditionalRend from './Components/CondionalRendering/ConditionalRend';
+import Counter from './Components/counter/Counter';
+import ContactUs from './Components/ContactUs/ContactUs';
+import LifecycleComponents from './Components/lifecyclemethods/LifecycleComponents';
+const App=()=>{
+    return(
+      <div>
+                  <Header />
+        {/* <h2 className='App'>Welcome to React</h2> */}
+        {/* <FuncComponent courseName="Reactjs" duration="3 Months" /> */}
+        <ClassComponent  />
+        <LifecycleComponents />
+          {/* <StylingsCss /> */}
+          {/* <UserData /> */}
+          {/* <ConditionalRend /> */}
+          {/* <Counter /> */}
+          {/* <ContactUs /> */}
+      </div>
+    )
 }
 
 export default App;

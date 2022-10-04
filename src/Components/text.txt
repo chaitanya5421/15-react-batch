@@ -1,0 +1,16 @@
+components - which gives the building blocks of the application.
+
+props(properties) - it is used to transfer data from parent component  child component 
+    - props are immutable(which data cannot be changed).
+
+state - 
+    - The React was released in 2013 in jsconfg as a open source 
+    - Never touch the DOM directly.
+    - for bigger applications DOm manipulation are very expensive.
+    - virtual DOM is a copy of Real DOM.
+
+class component(ES6) and functional component
+    from 2013 -2019
+    - class component are called stateful component
+    - class component has the react feature like life cycle methods.
+    - making network calls will happen only in class components.
